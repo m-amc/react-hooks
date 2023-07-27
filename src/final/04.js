@@ -90,7 +90,9 @@ function calculateWinner(squares) {
     [2, 4, 6],
   ]
   for (let i = 0; i < lines.length; i++) {
+    console.log('i', i)
     const [a, b, c] = lines[i]
+    console.log('abc', a, b, c)
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
       return squares[a]
     }
